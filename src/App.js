@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+// client/src/App.js
 
-function App() {
+import React from 'react';
+import Header from './components/Header';
+import Error from './components/Error';
+// import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+
+import { BrowserRouter , Route, Routes } from 'react-router-dom';
+import Register from './components/Auth/Register';
+import ChatRoom from './components/Chat/ChatRoom';
+import KanbanBoard from './components/Kanban/KanbanBoard';
+import Login from './components/Auth/Login';
+// import Body from './components/Body';
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <BrowserRouter>
+    <div className="">
+    <h1>MERN Chat and Kanban App</h1>
+      <Routes>
+          <Route path="/" element={<Header/>} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/register" component={<Register/>} />
+          <Route path="/chat" component={<ChatRoom/>} />
+          <Route path="/kanban" component={<KanbanBoard/>} />
+        </Routes>
     </div>
-  );
-}
+    </BrowserRouter>
+    );
+  };
+
+
 
 export default App;
