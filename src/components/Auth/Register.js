@@ -1,4 +1,3 @@
-// client/src/components/Auth/Register.js
 
 import React, { useState } from 'react';
 

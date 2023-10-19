@@ -2,15 +2,12 @@
 
 import React from 'react';
 import Header from './components/Header';
-import Error from './components/Error';
-// import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 import { BrowserRouter , Route, Routes } from 'react-router-dom';
 import Register from './components/Auth/Register';
 import ChatRoom from './components/Chat/ChatRoom';
 import KanbanBoard from './components/Kanban/KanbanBoard';
 import Login from './components/Auth/Login';
-// import Body from './components/Body';
 
 
 const App = () => {

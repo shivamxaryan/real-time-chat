@@ -1,5 +1,3 @@
-// client/src/components/Kanban/KanbanBoard.js
-
 import React, { useState } from 'react';
 
 const KanbanBoard = () => {

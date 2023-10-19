@@ -1,4 +1,3 @@
-// client/src/components/Auth/Login.js
 
 import React, { useState } from 'react';
 
@@ -17,13 +16,10 @@ const Login = () => {
       });
 
       if (response.status === 200) {
-        // Successfully logged in, handle the response (e.g., store token, redirect)
       } else {
-        // Handle login failure (e.g., show an error message)
       }
     } catch (error) {
       console.error("Login error:", error);
-      // Handle unexpected errors (e.g., show a generic error message)
     }
   };
 

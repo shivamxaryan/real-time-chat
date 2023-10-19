@@ -1,4 +1,3 @@
-// client/src/components/Chat/ChatRoom.js
 
 import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
@@ -6,8 +5,7 @@ import io from 'socket.io-client';
 const ChatRoom = () => {
   const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState('');
-  const socket = io('http://your-backend-server'); // Replace with your backend server URL
-
+  const socket = io('http://your-backend-server'); 
   useEffect(() => {
     socket.on('message', (message) => {
       setMessages([...messages, message]);
